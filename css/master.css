@@ -1,0 +1,245 @@
+/* --------- RESET --------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* --------------- BASE ------------ */
+
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+body {
+    background: hsl(0, 0%, 19.6%);
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------- BASICS -----------*/
+
+a,
+a:visited,
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 1em;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* ----------- HEADER ---------- */
+
+header {
+    height: 15%;
+    width: 100%;
+}
+
+header nav {
+    padding-top: 2.5em;
+    width: 100%;
+}
+
+header nav ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 960px;
+}
+
+header nav ul li {
+    display: table-cell;
+    text-align: center;
+}
+
+header nav ul li a {
+    display: block;
+    font-size: 2em;
+    height: 2.1em;
+    line-height: 2.1em;
+    opacity: .7;
+    text-align: center;
+    transition: all 200ms;
+    fill: #fff;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 2em;
+    width: 100%;
+}
+
+header nav ul li a:after {
+    transition: all 200ms;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    opacity: 1;
+}
+
+/* ------------ SPLASH ----------- */
+
+.splash {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    height: 35%;
+    justify-content: center;
+    width: 100%;
+}
+
+.splash .icon {
+    font-size: 20em;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.splash h1 {
+    font-size: 4em;
+    font-weight: 300;
+}
+
+/* ------------ SPECIALS ----------- */
+
+.home {
+    background-image: url("data:image/svg+xml;utf8,<svg width='57px' height='64px' viewBox='0 0 57 64' xmlns='http://www.w3.org/2000/svg'><g><path d='M28.1072335,64.6329846 L0.125,48.6153634 L0.125,16.5801211 L28.1072335,0.5625 L56.089467,16.5801211 L56.089467,48.6153634 L28.1072335,64.6329846 L28.1072335,64.6329846 Z M28.1072335,59.8752753 L51.9321066,46.2365088 L51.9321066,18.9589758 L28.1072335,5.32020925 L4.28236041,18.9589758 L4.28236041,46.2365088 L28.1072335,59.8752753 L28.1072335,59.8752753 Z' fill='#fff'></path></g></svg>");
+    text-indent: -999999px;
+}
+
+.home:hover,
+.home:active {
+    background-color: rgb(212,99,0);
+}
+
+.linkedin {
+    background-image: url("data:image/svg+xml;utf8,<svg width='64px' height='64px' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><path d='M4.71500266,64.2088369 L59.0890489,64.2088369 C61.6930421,64.2088369 63.8040516,62.148876 63.8040516,59.6093156 L63.8040516,4.5995213 C63.8040516,2.05910299 61.6930421,0 59.0890489,0 L4.71500266,0 C2.11092375,0 0,2.05910299 0,4.5995213 L0,59.6093156 C2.84217094e-14,62.148876 2.11092375,64.2088369 4.71500266,64.2088369 Z M19.3409828,24.4973393 L9.70395182,24.4973393 L9.70395182,53.4912253 L19.3409828,53.4912253 L19.3409828,24.4973393 Z M19.9747575,15.5299458 C19.9121265,12.6849518 17.8830521,10.5203198 14.5861708,10.5203198 C11.2896327,10.5203198 9.13426666,12.6849518 9.13426666,15.5299458 C9.13426666,18.3123087 11.2255431,20.5387138 14.4596218,20.5387138 L14.5222528,20.5387138 C17.8830521,20.5387138 19.9747575,18.3123087 19.9747575,15.5299458 Z M34.3104041,53.2534106 L34.3104041,37.0619974 C34.3104041,36.1954582 34.3730352,35.329777 34.627506,34.7103302 C35.3241692,32.9789678 36.9098501,31.1858322 39.5720986,31.1858322 C43.0592753,31.1858322 44.4542318,33.844649 44.4542318,37.7423593 L44.4542318,53.2534106 L54.0904048,53.2534106 L54.0904048,36.6287278 C54.0904048,27.7231074 49.3360218,23.5791626 42.9956147,23.5791626 C37.7967229,23.5791626 35.5143788,26.4850717 34.2463146,28.4643844 L34.3106615,24.2595246 L24.6737163,24.2595246 C24.8001796,26.9801144 24.6737163,53.2534106 24.6737163,53.2534106 L34.3104041,53.2534106 Z' fill='#fff'></path></g></svg>");
+    text-indent: -999999px;
+}
+
+.linkedin:hover,
+.linkedin:active {
+    background-color: rgb(0, 119, 181);
+}
+
+.github {
+    background-image: url("data:image/svg+xml;utf8,<svg width='64px' height='64px' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path d='M32,0 C14.328125,0 0,14.4572072 0,32.2882883 C0,46.5563063 9.168,58.6565315 21.88475,62.9250811 C23.484375,63.2207207 24.068375,62.2235045 24.068375,61.3721532 C24.068375,60.6035405 24.0390625,58.0574324 24.0234375,55.3614865 C15.125,57.3124685 13.244125,51.5540541 13.244125,51.5540541 C11.787125,47.8254505 9.691375,46.8322072 9.691375,46.8322072 C6.7831875,44.829955 9.912,44.8693694 9.912,44.8693694 C13.124875,45.094 14.816375,48.1959459 14.816375,48.1959459 C17.671875,53.1306306 22.3085625,51.7038288 24.128875,50.8761261 C24.41975,48.795045 25.247875,47.3682432 26.160125,46.5641892 C19.056625,45.7483423 11.584,42.9774775 11.584,30.6052613 C11.584,27.0776396 12.8320625,24.2004505 14.875,21.940018 C14.5488125,21.1201982 13.44725,17.834991 15.191375,13.3910631 C15.191375,13.3910631 17.875,12.5239459 23.992125,16.7018739 C26.542875,15.9825766 29.27925,15.6278468 31.9999375,15.615991 C34.7186875,15.6278468 37.4569375,15.9864865 40.0116875,16.7057838 C46.1171875,12.5239459 48.8046875,13.394973 48.8046875,13.394973 C50.5546875,17.8428739 49.453125,21.1241081 49.125,21.940018 C51.17575,24.2004505 52.4140625,27.0777027 52.4140625,30.6052613 C52.4140625,43.009009 44.9296875,45.7403964 37.8008125,46.5405405 C38.9531875,47.5416667 39.9726875,49.5045045 39.9726875,52.5157658 C39.9726875,56.8316757 39.9296875,60.3119369 39.9296875,61.3761261 C39.9296875,62.2353604 40.5116875,63.2403964 42.1328125,62.9250811 C54.839875,58.6486486 64,46.5484234 64,32.2882883 C64,14.4572072 49.671875,0 32,0 L32,0 Z' fill='#fff'></path></svg>");
+    text-indent: -99999px;
+}
+
+.github:hover,
+.github:active {
+    background-color: rgb(23, 21, 21);
+}
